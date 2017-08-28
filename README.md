@@ -1,7 +1,7 @@
-# ContactsMap [![Build Status](https://travis-ci.org/nithinmanne/ContactsMap.svg?branch=master)](https://travis-ci.org/nithinmanne/ContactsMap)
-This repository contains the source code for the showing contacts on Map (Part 1).
+# SensorView [![Build Status](https://travis-ci.org/nithinmanne/SensorView.svg?branch=master)](https://travis-ci.org/nithinmanne/SensorView)
+This repository contains the source code for the showing Sensors values and in graphs.
 
-This app is created for an assignment of Programmable and Embedded Systems.
+This app is created for an exam of Programmable and Embedded Systems.
 
 This app was built using [Android Studio 3.0](https://developer.android.com/studio/preview/index.html) and Gradle 4.1
 
