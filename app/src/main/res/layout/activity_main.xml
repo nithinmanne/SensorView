@@ -6,13 +6,93 @@
     android:layout_height="match_parent"
     tools:context="com.naganithin.sensorview.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
 
+        <TextView
+            android:id="@+id/l1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="78dp"
+            android:text="@string/textview" />
+
+        <TextView
+            android:id="@+id/l2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/l1"
+            android:layout_below="@+id/l1"
+            android:layout_marginTop="42dp"
+            android:text="@string/textview" />
+
+        <TextView
+            android:id="@+id/l4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="103dp"
+            android:text="@string/textview"
+            android:layout_below="@+id/l2"
+            android:layout_alignStart="@+id/l2" />
+
+        <TextView
+            android:id="@+id/v1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/l1"
+            android:layout_marginStart="99dp"
+            android:layout_toEndOf="@+id/l1"
+            android:text="@string/textview" />
+
+        <TextView
+            android:id="@+id/v2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/v1"
+            android:layout_alignTop="@+id/l2"
+            android:text="@string/textview" />
+
+        <TextView
+            android:id="@+id/v4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textview"
+            android:layout_alignBaseline="@+id/l4"
+            android:layout_alignBottom="@+id/l4"
+            android:layout_alignStart="@+id/v2" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="58dp"
+            android:onClick="graph"
+            android:text="@string/show_graphs" />
+
+        <TextView
+            android:id="@+id/l3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="27dp"
+            android:text="@string/textview"
+            android:layout_above="@+id/v4"
+            android:layout_alignStart="@+id/l4" />
+
+        <TextView
+            android:id="@+id/v3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/l3"
+            android:layout_alignStart="@+id/v4"
+            android:text="@string/textview" />
+    </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
